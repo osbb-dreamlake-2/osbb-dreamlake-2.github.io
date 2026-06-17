@@ -39,6 +39,154 @@
                      <div class="card mb-4">
                         <a><img class="card-img-top" src="./assets/electricity-titled.png" /></a>
                         <div class="card-body">
+                           <div class="card">
+                              <div class="card-header h4">
+                                 Вимоги/споживання
+                              </div>
+                              <div class="card-body" style="font-size:0.8rem">
+                                 <table class="table table-bordered border-primary">
+                                    <thead>
+                                       <tr>
+                                          <th><b>Назва</b></th>
+                                          <th><b>Споживання</b></th>
+                                          <th><b>Пріоритет</b></th>
+                                          <th><b>Коментар</b></th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <th>Водопостачання</th>
+                                          <th>&lt; 3 кВт</th>
+                                          <th><span class="badge rounded-pill bg-danger">Критичний</span></th>
+                                          <th>
+                                             Зараз у нас працює тимчасовий насос, після підключення до міських мереж будуть інші насоси.
+                                             <br/>
+                                             Споживання вказано приблизно. Реальне споживання поки важко оцінити.
+                                          </th>                                          
+                                       </tr>
+                                       <tr>
+                                          <th>Домофон</th>
+                                          <th>&lt; 0.09 кВт</th>
+                                          <th><span class="badge rounded-pill bg-danger">Критичний</span></th>
+                                          <th>Підключений через PoE (технологія підтримує максимум 90Вт)</th>
+                                       </tr>
+                                       <tr>
+                                          <th>Ліфт</th>
+                                          <th>
+                                             Початок руху: ~11.2 кВт
+                                             <br/>
+                                             Звичайний рух: ~9.2 кВт
+                                             <br/>
+                                             Очікування: ~0.3 кВт
+                                          </th>
+                                          <th>
+                                             <span class="badge rounded-pill bg-danger">Критичний</span>
+                                             <span class="badge rounded-pill bg-warning text-dark">Високий</span>
+                                          </th>
+                                          <th>
+                                             Час руху з 1 по 9 поверх: ~30 сек
+                                             <br/>
+                                             Час відкриття-закриття дверей: ~10-13 сек
+                                             <br/>
+                                             Теоретично ліфт може спожити ~7.5 кВт за годину (якщо постійно їздити між першим і 9 поверхом цілу годину, без простою), але таке малоймовірно.
+                                             <br/>
+                                             У нас всього 72 квартири, тому я не думаю що ліфт буде в русі більше 30% (~2.5 кВт)часу в години пік, і 15% (~1.2кВт) в звичайнні години.
+                                          </th>
+                                       </tr>
+                                       <tr>
+                                          <th>Відеоспостереження</th>
+                                          <th>&lt; 0.5 кВт</th>
+                                          <th><span class="badge rounded-pill bg-warning text-dark">Високий</span></th>
+                                          <th>Приблизне споживання</th>
+                                       </tr>
+                                       <tr>
+                                          <th>Освітлення МЗК</th>
+                                          <th>&lt; 0.5 кВт</th>
+                                          <th><span class="badge rounded-pill bg-warning text-dark">Високий</span></th>
+                                          <th>Приблизне споживання</th>
+                                       </tr>
+                                       <tr>
+                                          <th>Шлагбаум</th>
+                                          <th>&lt; 0.1 кВт</th>
+                                          <th><span class="badge rounded-pill bg-warning text-dark">Високий</span></th>
+                                          <th>Можливо він підключенний через першу секцію</th>
+                                       </tr>
+                                       <tr>
+                                          <th>Вуличне освітлення</th>
+                                          <th>&lt; 0.5 кВт</th>
+                                          <th><span class="badge rounded-pill bg-primary">Низький</span></th>
+                                          <th>Поки немає</th>
+                                       </tr>
+                                       <tr>
+                                          <th>Розетка в холлі</th>
+                                          <th> &lt;2кВт</th>
+                                          <th><span class="badge rounded-pill bg-primary">Низький</span></th>
+                                          <th>
+                                             Для обмеження потужності (наприклад, 2кВт) можна використовувати автомат чи смарт-розетку.
+                                             <br>
+                                             Пропонується використовувати для підзарядки телефонів/павербанків/станцій.
+                                             <br/>
+                                             Можна використовувати тільки з генератором, так як він буде мати надлишкову потужність.</th>
+                                       </tr>
+                                       <tr  class="table-active">
+                                          <th>Загалом <br/><span class="badge rounded-pill bg-danger">Критичний</span><span class="badge rounded-pill bg-warning text-dark">Високий</span></th>
+                                          <th> ~ 13 кВт</th>
+                                          <th></th>
+                                          <th></th>
+                                       </tr>
+                                       <tr  class="table-active">
+                                          <th>Загалом <br/><span class="badge rounded-pill bg-danger">Критичний</span><span class="badge rounded-pill bg-warning text-dark">Високий</span><span class="badge rounded-pill bg-primary">Низький</span></th>
+                                          <th> ~ 15 кВт</th>
+                                          <th></th>
+                                          <th></th>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           <p>
+                           <div class="card">
+                              <div class="card-header h4">
+                                 Державні програми
+                              </div>
+                              <div class="card-body" style="font-size:0.8rem">
+                                 <table class="table table-bordered border-primary">
+                                    <thead>
+                                       <tr>
+                                          <th><b>Назва</b></th>
+                                          <th><b>Умови</b></th>
+                                          <th><b>Статус</b></th>
+                                          <th><b>Коментар</b></th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <th>ГрінДІМ</th>
+                                          <th>Відшкодування 50-70% від вартості обладнання</th>
+                                          <th><span class="badge rounded-pill bg-secondary">Призупинена</span></th>
+                                          <th>
+                                             Посилання: <a href="https://eefund.org.ua/greendim/" target="_blank">https://eefund.org.ua/greendim/</a>
+                                             <br/>
+                                             Нові заявки не приймають з квітня 2026 року. Термін відновлення програми - невідомо.
+                                             <br/>
+                                             Минулого року заявки перестали приймати в березні 2025, а відновили аж в лютому 2026.
+                                          </th>                                          
+                                       </tr>
+                                       <tr>
+                                          <th>Револьверний фонд міст АЕМУ</th>
+                                          <th>Безвідсоткова позика на рік (до 500 тисяч)</th>
+                                          <th><span class="badge rounded-pill bg-success">Діючий</span></th>
+                                          <th>
+                                             Посилання: <a href="https://enefcities.org.ua/diyalnist/revolvernyy-fond-mist-aemu/" target="_blank">https://enefcities.org.ua/diyalnist/revolvernyy-fond-mist-aemu/</a>
+                                             <br/>
+                                             Обов'язкова умова участі: прийняття даної програми через Загальні збори 
+                                          </th>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           <h3 class="card-title h4"></h3>
                            <h2 class="card-title h2">Можливі компоненти</h2>
                            <h3 class="card-title h4">Генератор</h3>
                            <div class="row">
@@ -103,9 +251,6 @@
                                  </ul>
                               </div>
                            </div>
-                           <h3 class="card-title h3">Вимоги</h3>
-                           <h3 class="card-title h4">Технічні характеристики/потужність будинкових систем</h3>
-                           <h3 class="card-title h4"></h3>
                         
                         </div>
                      </div>
